@@ -222,7 +222,7 @@ function renderInterview() {
     console.log(interview);
 
     let div = document.createElement('div');
-    div.className = 'card card-container p-6 rounded border-2 border-gray-100 mt-4 shadow-sm'
+    div.className = 'card card-container p-6 rounded border-2 border-gray-100 mt-4 shadow-sm bg-white'
     div.innerHTML = `
               <!-- main part 1  -->
                  <div class="flex justify-between items-start">
@@ -240,7 +240,7 @@ function renderInterview() {
              <div>
                 <p class="jobPosition text-slate-500 mb-5">${interview.jobPosition}</p>
  <br>
- <button id="not-applied-btn" class="applystatus btn btn-outline mb-2 border-2 border-emerald-500 text-emerald-500 py-2 px-3">${interview.applystatus}</button>
+ <button class="applystatus btn btn-outline mb-2 border-2 border-emerald-500 text-emerald-500 py-2 px-3">${interview.applystatus}</button>
  <br>
  <p class="jobdescription text-slate-800 mb-5">${interview.jobdescription}</p>
 
@@ -267,7 +267,7 @@ function renderRejected() {
     console.log(rejected);
 
     let div = document.createElement('div');
-    div.className = 'card card-container p-6 rounded border-2 border-gray-100 mt-4 shadow-sm'
+    div.className = 'card card-container p-6 rounded border-2 border-gray-100 mt-4 shadow-sm bg-white'
     div.innerHTML = `
               <!-- main part 1  -->
                  <div class="flex justify-between items-start">
@@ -285,7 +285,7 @@ function renderRejected() {
              <div>
                 <p class="jobPosition text-slate-500 mb-5">${rejected.jobPosition}</p>
  <br>
- <button id="not-applied-btn" class="applystatus btn btn-outline mb-2 border-2 border-red-500 text-red-500 py-2 px-3">${rejected.applystatus}</button>
+ <button class="applystatus btn btn-outline mb-2 border-2 border-red-500 text-red-500 py-2 px-3">${rejected.applystatus}</button>
  <br>
  <p class="jobdescription text-slate-800 mb-5">${rejected.jobdescription}</p>
 
