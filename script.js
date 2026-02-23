@@ -58,7 +58,6 @@ function toggleStyle(id) {
         renderRejected();
     }
 
-
 }
 
 mainContainer.addEventListener('click', function(event){
@@ -152,6 +151,13 @@ calculateCount()
 
         interviewList = interviewList.filter(item => item.companyName !== companyName);
         rejectedList = rejectedList.filter(item => item.companyName != companyName);
+
+        const allCards = allCardSection.querySelectorAll('.card');
+        allCards.forEach(card => {
+            if(card.querySelector('.companyName').innerText == companyName){
+                card.remove();
+            }
+        })
 
         parentNode.remove();
 
