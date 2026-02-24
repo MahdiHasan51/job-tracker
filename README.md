@@ -16,6 +16,7 @@ We can create and insert a new element to DOM in the two following ways:
 3. What is Event Bubbling? And how does it work?
 
 Event Bubbling is a concept in the Document Object Model(DOM). It happens when an element receives an event and the event bubbles up to its parent and ancestor elements in the DOM tree until it gets to the root element.
+It works by allowing parent elements to handle events that occur on their children's element.
 
 4. What is Event Delegation in JavaScript? Why is it useful?
 
